@@ -6,22 +6,22 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity('todos')
+@Entity('books')
 export class BookEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
+  code: string;
+
+  @Column()
   title: string;
 
   @Column()
-  description: string;
+  author: string;
 
-  @Column({
-    type: 'boolean',
-    default: false,
-  })
-  is_done: boolean;
+  @Column()
+  stock: number;
 
   @CreateDateColumn()
   create_at: Date;

@@ -2,11 +2,14 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateBookDto {
   @ApiProperty()
+  code: string;
+
+  @ApiProperty()
   title: string;
 
   @ApiProperty()
-  description: string;
+  author: string;
 
   @ApiProperty()
-  is_done: boolean;
+  stock: number;
 }

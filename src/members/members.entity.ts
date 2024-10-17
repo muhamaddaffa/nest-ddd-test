@@ -12,16 +12,10 @@ export class MembersEntity {
   id: number;
 
   @Column()
-  title: string;
+  code: string;
 
   @Column()
-  description: string;
-
-  @Column({
-    type: 'boolean',
-    default: false,
-  })
-  is_done: boolean;
+  name: string;
 
   @CreateDateColumn()
   create_at: Date;

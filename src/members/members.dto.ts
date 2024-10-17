@@ -2,11 +2,8 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateMembersDto {
   @ApiProperty()
-  title: string;
+  code: string;
 
   @ApiProperty()
-  description: string;
-
-  @ApiProperty()
-  is_done: boolean;
+  name: string;
 }
