@@ -3,7 +3,9 @@ import { Crud, CrudController } from '@dataui/crud';
 import { MembersEntity } from './members.entity';
 import { MembersService } from './members.service';
 import { CreateMembersDto } from './members.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Members')
 @Crud({
   model: {
     type: MembersEntity,

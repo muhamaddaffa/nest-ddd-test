@@ -3,7 +3,9 @@ import { Crud, CrudController } from '@dataui/crud';
 import { BookEntity } from './book.entity';
 import { BookService } from './book.service';
 import { CreateBookDto } from './book.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Books')
 @Crud({
   model: {
     type: BookEntity,
