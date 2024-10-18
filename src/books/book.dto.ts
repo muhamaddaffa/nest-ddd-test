@@ -13,3 +13,10 @@ export class CreateBookDto {
   @ApiProperty()
   stock: number;
 }
+export class BorrowBookDto {
+  @ApiProperty()
+  borrowed_books: number[];
+
+  @ApiProperty()
+  borrowed_by: number;
+}
